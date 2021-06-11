@@ -1,6 +1,10 @@
 ---
 - name: "Deploy"
   hosts: localhost
+  environment:
+    AWS_ACCESS_KEY: "{{ my_access_key }}"
+    AWS_SECRET_KEY: "{{ my_secret_key }}"
+    AWS_EC2_REGION: "{{ my_region }}"
   become: true
   vars:
     ansible_connection: local
