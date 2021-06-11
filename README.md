@@ -1,14 +1,14 @@
 # ansible-aws-ec2
 Changes from @yguionnet:
 
-- add ask-pass in ansible.cfg
+* add ask-pass in ansible.cfg
 
   [privilege_escalation]
   become_ask_pass= true
 
-- change subnet in group_vars for an existing one
+* change subnet in group_vars for an existing one
 
-- add environment section at playbook top level:
+* add environment section at playbook top level:
   environment:
     AWS_ACCESS_KEY: "{{ my_access_key }}"
     AWS_SECRET_KEY: "{{ my_secret_key }}"
